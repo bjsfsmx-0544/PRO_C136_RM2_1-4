@@ -1,5 +1,5 @@
 var date = new Date()
-let display_date= "Date:" + date.toLocaleDateString()
+let display_date= "Fecha: " + date.toLocaleDateString()
 
 $(document).ready(function () {
     $("#display_date").html(display_date)
@@ -44,7 +44,7 @@ $(function () {
             dataType: "json",
             contentType: 'application/json',
             success: function () {
-                alert("Your entry has been saved successfully!")
+                alert("¡Tu entrada ha sido guardada exitosamente!")
                 window.location.reload()
             },
             error: function (result) {
@@ -54,4 +54,3 @@ $(function () {
 
     });
 })
-
