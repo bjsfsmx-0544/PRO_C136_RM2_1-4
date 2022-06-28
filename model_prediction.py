@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
 from datetime import datetime
-# Make Code and URL Dictionary for different Emotions
+#Hacer el diccionario del código y URL para diferentes emociones
 emo_code_url = {
     "empty": [0, "./static/assets/emoticons/Empty.png"],
     "sadness": [1, "./static/assets/emoticons/Sadness.png"],
@@ -63,7 +63,7 @@ def predict(text):
                 predicted_emotion=key
         return predicted_emotion, predicted_emotion_img_url
 
-#Display entry
+#Mostrar entrada
 def show_entry():
     day_entry_list = pd.read_csv("./static/assets/data_files/data_entry.csv")
 
